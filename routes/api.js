@@ -14,11 +14,11 @@ module.exports = function (app) {
       let initUnit = convertHandler.getUnit(input);
 
       if(!initNum && !initUnit){
-        res.send("Invalid Number and Unit")
+        res.send("invalid number and unit")
       } else if(!initNum){
-        res.send("Invalid Number")
+        res.send("invalid number")
       } else if(!initUnit){
-        res.send("Invalid Unit")
+        res.send("invalid unit")
       }
 
       let returnNum = convertHandler.convert(initNum, initUnit);
