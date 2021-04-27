@@ -35,11 +35,6 @@ suite('Unit Tests', function(){
         assert.equal(convertHandler.getNum(input),1);
         done();
     });
-    test('no numerical input',(done)=>{
-        let input = 'L';
-        assert.equal(convertHandler.getNum(input),1);
-        done();
-    });
     suite("Function convertHandler.getUnit(input)",()=>{
         test('for each valid unit inputs',(done)=>{
             let input = ['L','gal','mi','km','lbs','kg','GAL','l','MI','KM','LBS','KG'];
